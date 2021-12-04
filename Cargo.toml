@@ -1,0 +1,11 @@
+[package]
+name = "too-much-engineering"
+version = "2021.12.4"
+authors = ["sthagen"]
+edition = "2018"
+
+
+[workspace]
+members = ["manage","builds"]
+
+[dependencies]
