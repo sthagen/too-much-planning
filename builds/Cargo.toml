@@ -1,0 +1,15 @@
+[package]
+name = "builds"
+version = "2021.12.4"
+authors = ["sthagen"]
+edition = "2018"
+
+
+[dependencies]
+actix-web = "^3.3"
+actix-rt = "1.1.1"
+dotenv = "0.15.0"
+sqlx = {version = "0.3.5", default_features = false, features = ["postgres","runtime-tokio", "macros","chrono"]}
+serde = { version = "1.0.110", features = ["derive"] }
+chrono = {version = "0.4.11", features = ["serde"]}
+openssl = { version = "0.10", features = ["vendored"] }
